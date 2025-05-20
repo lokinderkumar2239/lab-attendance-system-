@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terms & Conditions</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'poppins', sans-serif;
+            background: linear-gradient(to right, #f3c677, #f79292);
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .terms-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1000px;
+            height: 100vh;
+        }
+
+        .terms-box {
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px 50px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .terms-box::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .terms-box::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terms-container">
+        <h2>Terms & Conditions</h2>
+        <div class="terms-box">
+            <h3>
+                All students are strictly required to comply with the following rules. Any violation will result in a
+                fine of Rs. 500/-, being marked absent for the next 3 days in all classes, or both, depending on the
+                severity of the breach.
+            </h3>
+            <h3>
+                1. Computer Allotment
+            </h3>
+            <p>
+                Computers will be assigned by the subject teacher.
+
+                Students must sit only on their assigned systems and are not allowed to change seats without prior
+                consent from the concerned teacher.
+            </p>
+
+            <h3>
+                2. Prohibited Items
+            </h3>
+            <p>No eatables, chewing gum, water bottles, bags, or any similar items are allowed inside the computer lab.
+            </p>
+
+            <h3>
+                3. Device Usage
+            </h3>
+            <p>
+                Mobile phones and personal laptops are strictly not allowed inside the lab.
+
+                However, laptops may be permitted in special cases with prior consent from the subject teacher.
+
+                No downloading or updating of software on personal devices (laptops, mobiles, etc.) is allowed.
+            </p>
+            <h3>
+                4. System Handling
+            </h3>
+            <p>
+                In case of hardware or software malfunction, students must immediately report to the lab assistant or
+                the concerned teacher.
+
+                Do not attempt to fix, unplug, or tamper with any computer system, accessories, or cables.
+            </p>
+            <h3>
+                5. Data and Software Restrictions
+            </h3>
+            <p>
+                Do not delete, modify, or install any software or files on lab computers without permission.
+            <h3>
+                6. Lab Conduct
+            </h3>
+            <p>
+                Maintain silence and discipline at all times.
+
+                Handle all equipment with care and respect others' workstations.
+            </p>
+            
+            <h3>
+                7. Cleanliness
+            </h3>
+            <p>
+                Keep your workstation neat and clean before leaving.
+
+                Do not leave paper, trash, or personal items in the lab.
+
+                Ensure clean hands when using lab equipment; avoid touching screens or devices with dirty hands.
+            </p>
+
+            <h3>
+                8. Lab Timing
+            </h3>
+               
+            
+            <p>
+                Students must strictly follow their assigned lab timings and vacate the lab promptly at the end of the session.
+            </p>
+            <h3>
+                9. Accountability
+            </h3>
+            
+            <p>
+                Students are responsible for the system allotted to them.
+
+                Any damage or misuse will lead to disciplinary action and/or recovery of repair costs..
+            </p>
+            <h3>
+                10. Monitoring
+            </h3>
+            
+            <p>
+                The lab is under CCTV surveillance. Any form of misconduct or suspicious activity will be reported and dealt with strictly.
+            </p>
+            
+            
+            
+                <h4>Note: All concerned teachers must ensure strict compliance with the aforementioned rules.</h4> 
+            
+        </div>
+        <label>
+            <input type="checkbox" id="agree">
+            I agree to the Terms & Conditions
+        </label>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            const checkbox = document.getElementById("agree");
+            if (checkbox.checked) {
+                alert("Thank you for accepting the terms.");
+            } else {
+                alert("Please agree to the terms before continuing.");
+            }
+        }
+    </script>
+</body>
+
+</html>

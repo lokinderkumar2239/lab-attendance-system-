@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Attendance Record</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="left">
+            <div class="logo">
+                <a href="https://gcchamba.highalteducation.in/" target="_blank">
+                    <img src="logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <a href="conditions.html">
+                <i class="fa-solid fa-face-smile"></i>
+                <span>Terms & Conditions</span>
+            </a>
+            <a href="login.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Register Here If Not</span>
+            </a>
+            <a href="msg.html">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Drop Your Msg</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Lab Attendance System</h1>
+        <form id="attendanceForm" class="messageForm" autocomplete="off">
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" class="message" required>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" class="message" required>
+
+            <label for="systemSeat">System Seat Number:</label>
+            <input type="text" id="systemSeat" name="systemSeat" class="message" required>
+
+            <label for="checkIn">Check-in Time:</label>
+            <input type="time" id="checkIn" name="checkIn" class="message" required>
+
+            <label for="checkOut">Check-out Time:</label>
+            <input type="time" id="checkOut" name="checkOut" class="message" required>
+
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </div>
+
+    <!--footer-section-->
+    <div class="panel">
+        <p>
+            2025 © All Rights Reserved. Developed and maintained by Solutions with lucky Pvt Ltd Current Session Year :
+            2025-2026
+        </p>
+    </div>
+
+</body>
+
+</html>

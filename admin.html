@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Attendance Admin Panel</title>
+  <link rel="stylesheet" href="admin.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Students</a>
+        <a href="#">Systems</a>
+        <a href="#">Attendance Records</a>
+        <a href="#">Logs</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Search..." />
+        <div class="icons">
+          <i class="fa-solid fa-bell"></i>
+          <span class="avatar">L</span>
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h1>Lab Attendance System</h1>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="greater">
+              
+              <p>Total Students</p>
+
+              <h2>34</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div>
+              
+              <p>Today's Attendance</p>
+
+              <h2>30</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-display"></i>
+            </div>
+            <div>
+              
+              <p>Logged-in Systems</p>
+
+              <h2>30</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-regular fa-keyboard"></i>
+            </div>
+            <div>
+              
+              <p>Active Labs</p>
+              <h2>24</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="attendance-record">
+          <h2>Attendance Record</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>System Name</th>
+                <th>Studnet Roll No</th>
+                <th>In-Time</th>
+                <th>Out-Time</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="record-table-body">
+              <tr>
+                <td>Avinash Jariyal</td>
+                <td>BCA08</td>
+                <td>2204</td>
+                <td>09:32 AM</td>
+                <td>10:50 AM</td>
+                <td>17-Apr</td>
+              </tr>
+              <tr>
+                <td>Lokinder kumar</td>
+                <td>BCA29</td>
+                <td>2239</td>
+                <td>09:05 AM</td>
+                <td>10:15 AM</td>
+                <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Aman kumar</td>
+              <td>BCA28</td>
+              <td>2220</td>
+              <td>10:05 AM</td>
+              <td>10:50 AM</td>
+              <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Rohit kumar</td>
+              <td>BCA05</td>
+              <td>2237</td>
+              <td>10:25 AM</td>
+              <td>11:50 AM</td>
+              <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Anjali kumari</td>
+              <td>BCA15</td>
+              <td>2240</td>
+              <td>09:50 AM</td>
+              <td>12:15 PM</td>
+              <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Neha kumari</td>
+              <td>BCA28</td>
+              <td>2230</td>
+              <td>09:05 AM</td>
+              <td>11:05 AM</td>
+              <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Mukesh kumar</td>
+              <td>BCA09</td>
+              <td>2212</td>
+              <td>10:05 AM</td>
+              <td>12:50 PM</td>
+              <td>17-Apr</td>
+              </tr>
+              <tr>
+              <td>Jyoti Sharma</td>
+              <td>BCA19</td>
+              <td>2208</td>
+              <td>10:05 AM</td>
+              <td>12:40 PM</td>
+              <td>17-Apr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
